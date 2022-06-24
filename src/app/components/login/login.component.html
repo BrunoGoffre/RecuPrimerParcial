@@ -1,0 +1,22 @@
+<div class="container d-flex justify-content-center mt-5">
+    <form [formGroup]="usuario" (submit)="submit()">
+        <div class="form-outline">
+            <label class="form-label">Email:</label>
+            <input type="email" id="form2Example1" class="form-control" formControlName="email" [(ngModel)]="email" />
+        </div>
+
+        <div class="form-outline mb-4">
+            <label class="form-label">Password:</label>
+            <input type="password" class="form-control" formControlName="contraseña" [(ngModel)]="pass" />
+        </div>
+        <div class="row">
+            <button type="submit" class="btn btn-primary btn-block mb-4">Sign in</button>
+            <button type="button" (click)="AutocompletarAdmin()" class="btn btn-primary btn-block mb-4">Auto complete
+                Admin</button>
+        </div>
+        <div class="row">
+            <button type="button" (click)="AutocompletarEmpleado()" class="btn btn-primary btn-block mb-4">Auto complete
+                Empleado</button>
+        </div>
+    </form>
+</div>
