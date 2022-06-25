@@ -16,6 +16,18 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { AltaRepartidorComponent } from './components/alta-repartidor/alta-repartidor.component';
 import { LoadingComponent } from './components/loading/loading.component';
 import { TablaPaisesComponent } from './components/tabla-paises/tabla-paises.component';
+import { DetalleRepartidorComponent } from './components/detalle-repartidor/detalle-repartidor.component';
+import { RepartidoresComponent } from './components/repartidores/repartidores.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MaterialModule } from './material/material.module';
+import { RepartidoresPageComponent } from './components/repartidores-page/repartidores-page.component';
+import { PaisComponent } from './components/pais/pais.component';
+import { PizzasComponent } from './components/pizzas/pizzas.component';
+import { AltaComponent } from './components/pizzas/alta/alta.component';
+import { BajaComponent } from './components/pizzas/baja/baja.component';
+import { MuestraComponent } from './components/pizzas/muestra/muestra.component';
+import { ModifcaComponent } from './components/pizzas/modifca/modifca.component';
+import { AltaRepartidorModule } from './components/alta-repartidor/alta-repartidor.module';
 
 @NgModule({
   declarations: [
@@ -23,9 +35,15 @@ import { TablaPaisesComponent } from './components/tabla-paises/tabla-paises.com
     BienvenidoComponent,
     LoginComponent,
     NavbarComponent,
-    AltaRepartidorComponent,
-    LoadingComponent,
-    TablaPaisesComponent
+    DetalleRepartidorComponent,
+    RepartidoresComponent,
+    RepartidoresPageComponent,
+    PaisComponent,
+    PizzasComponent,
+    AltaComponent,
+    BajaComponent,
+    MuestraComponent,
+    ModifcaComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +51,11 @@ import { TablaPaisesComponent } from './components/tabla-paises/tabla-paises.com
     AngularFireAuthModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MaterialModule,
+    AltaRepartidorModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

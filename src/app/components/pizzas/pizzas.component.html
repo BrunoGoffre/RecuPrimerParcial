@@ -1,0 +1,20 @@
+<div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+    <h1 class="display-4 fw-normal">Pizzas ABM</h1>
+</div>
+<main>
+    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+        <div class="col">
+            <app-alta (nuevaPizza)="crearPizza($event)"></app-alta>
+        </div>
+        <div class="col">
+            <app-modifca *ngIf="pizzaSelecc" [pizza]="pizzaSelecc" (pizzaModificada)="modificarPizza($event)">
+            </app-modifca>
+        </div>
+        <div class="col">
+            <app-baja *ngIf="pizzaSelecc" [pizza]="pizzaSelecc" (pizzaBorrada)="borrarPizza($event)"></app-baja>
+        </div>
+    </div>
+
+    <app-muestra *ngIf="listaPizzas" [listaPizzas]="listaPizzas" (pizzaSeleccionada)="pizzaSeleccionada($event)">
+    </app-muestra>
+</main>
