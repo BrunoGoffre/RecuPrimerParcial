@@ -13,9 +13,6 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { AltaRepartidorComponent } from './components/alta-repartidor/alta-repartidor.component';
-import { LoadingComponent } from './components/loading/loading.component';
-import { TablaPaisesComponent } from './components/tabla-paises/tabla-paises.component';
 import { DetalleRepartidorComponent } from './components/detalle-repartidor/detalle-repartidor.component';
 import { RepartidoresComponent } from './components/repartidores/repartidores.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -28,6 +25,8 @@ import { BajaComponent } from './components/pizzas/baja/baja.component';
 import { MuestraComponent } from './components/pizzas/muestra/muestra.component';
 import { ModifcaComponent } from './components/pizzas/modifca/modifca.component';
 import { AltaRepartidorModule } from './components/alta-repartidor/alta-repartidor.module';
+import { ButtonModule } from 'primeng/button';
+import { DialogModule } from 'primeng/dialog';
 
 @NgModule({
   declarations: [
@@ -54,7 +53,10 @@ import { AltaRepartidorModule } from './components/alta-repartidor/alta-repartid
     ReactiveFormsModule,
     MatFormFieldModule,
     MaterialModule,
-    AltaRepartidorModule
+    AltaRepartidorModule,
+    ButtonModule,
+    DialogModule
+
 
   ],
   providers: [],
