@@ -3,12 +3,13 @@ import { AngularFirestore } from '@angular/fire/compat/firestore'
 import { AngularFireAuth } from '@angular/fire/compat/auth';
 import { AngularFireStorage } from '@angular/fire/compat/storage';
 import { FirebaseService } from './firebase.service';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class FirestoreService {
-
+  acepta: BehaviorSubject<any> = new BehaviorSubject("");
   constructor(private firetore: AngularFirestore, private aFAuth: AngularFireAuth, private AFAuthService: FirebaseService, private storage: AngularFireStorage) { }
 
   getAll(entidad: string) {

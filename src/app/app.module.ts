@@ -27,6 +27,8 @@ import { ModifcaComponent } from './components/pizzas/modifca/modifca.component'
 import { AltaRepartidorModule } from './components/alta-repartidor/alta-repartidor.module';
 import { ButtonModule } from 'primeng/button';
 import { DialogModule } from 'primeng/dialog';
+import { TerminosYCondicionesComponent } from './pages/terminos-y-condiciones/terminos-y-condiciones.component';
+import { RegisterComponent } from './pages/register/register.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +44,9 @@ import { DialogModule } from 'primeng/dialog';
     AltaComponent,
     BajaComponent,
     MuestraComponent,
-    ModifcaComponent
+    ModifcaComponent,
+    TerminosYCondicionesComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

@@ -19,6 +19,13 @@ export class FirebaseService {
       return error;
     }
   }
+  async RegisterWithEmailAndPass(email: string, pass: string) {
+    try {
+      return await this.firebase.createUserWithEmailAndPassword(email, pass);
+    } catch (error) {
+      return error;
+    }
+  }
 
   async Login(email: string, pass: string) {
     try {
